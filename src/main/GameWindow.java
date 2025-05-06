@@ -11,11 +11,19 @@ public class GameWindow {
     public GameWindow(GamePanel gamePanel){
         jframe = new JFrame();
 
+        // title and icon
+        jframe.setTitle("Sailor's Odyssey!");
+//        jframe.setIconImage(new ImageIcon("src/main/resources/icon.png").getImage());
+//        jframe.setIconImage(ICON);
+
+        // settings
         jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        jframe.add(gamePanel);
-        jframe.setLocationRelativeTo(null);
         jframe.setResizable(false);
+
+        //add actual game panel
+        jframe.add(gamePanel);
         jframe.pack();
+        jframe.setLocationRelativeTo(null);
         jframe.setVisible(true);
 
         jframe.addWindowFocusListener(new WindowFocusListener() {
