@@ -1,6 +1,30 @@
 package utils;
 
+import main.Game;
+
 public class Constants {
+
+    public static class UI{
+
+        public static class Buttons {
+            public static final int BUTTON_WIDTH_DEFAULT = 64;
+            public static final int BUTTON_HEIGHT_DEFAULT = 16;
+            public static final int BUTTON_WIDTH = (int) (2 * BUTTON_WIDTH_DEFAULT * Game.SCALE);
+            public static final int BUTTON_HEIGHT = (int) (2 * BUTTON_HEIGHT_DEFAULT * Game.SCALE);
+        }
+
+        public static class VolumeButtons {
+            public static final int VOLUME_WIDTH_DEFAULT = 5;
+            public static final int VOLUME_HEIGHT_DEFAULT = 16;
+            public static final int SLIDER_WIDTH_DEFAULT = 62;
+            public static final int SLIDER_HEIGHT_DEFAULT = 16;
+            public static final int VOLUME_WIDTH = (int) (2 * VOLUME_WIDTH_DEFAULT * Game.SCALE);
+            public static final int VOLUME_HEIGHT = (int) (2 * VOLUME_HEIGHT_DEFAULT * Game.SCALE);
+            public static final int SLIDER_WIDTH = (int) (2 * SLIDER_WIDTH_DEFAULT * Game.SCALE);
+            public static final int SLIDER_HEIGHT = (int) (2 * SLIDER_HEIGHT_DEFAULT * Game.SCALE);
+        }
+
+    }
 
     public static class Directions{
         public static final int LEFT=0;
