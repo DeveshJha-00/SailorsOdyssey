@@ -39,13 +39,13 @@ public class Menu extends State implements StateMethods{
         backgroundImage = LoadSave.getStripeAtlas(LoadSave.MENU_BACKGROUND);
     }
 
-//    private void loadLogo() {
-//        logoImage = LoadSave.getStripeAtlas(LoadSave.MENU_LOGO);
-//        logoWidth = (int) (logoImage.getWidth() * Game.SCALE / 2.5);
-//        logoHeight = (int) (logoImage.getHeight() * Game.SCALE / 2.5);
-//        logoX = Game.GAME_WIDTH / 2 - logoWidth / 2;
-//        logoY = (int) (30 * Game.SCALE);
-//    }
+    private void loadLogo() {
+        logoImage = LoadSave.getStripeAtlas(LoadSave.MENU_LOGO);
+        logoWidth = (int) (logoImage.getWidth() * Game.SCALE / 2.5);
+        logoHeight = (int) (logoImage.getHeight() * Game.SCALE / 2.5);
+        logoX = Game.GAME_WIDTH / 6 - logoWidth / 2;
+        logoY = (int) (10 * Game.SCALE);
+    }
 
 
     private void resetButtons() {
@@ -72,7 +72,7 @@ public class Menu extends State implements StateMethods{
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        System.out.println("IN MENU CLICKED MOUSE");
     }
 
     @Override

@@ -13,9 +13,15 @@ public class LoadSave {
     public static final String PLAYER_ATLAS = "entities/player/player_sprites.png";
     public static final String LEVEL_ATLAS = "levels/outside_sprites.png";
     public static final String LEVEL_ONE_DATA_ATLAS= "levels/level_one_data.png";
+
     public static final String MENU_BUTTONS= "ui/startMenu/button_atlas.png";
     public static final String MENU_BACKGROUND= "ui/startMenu/menu_background.png";
-    public static final String MENU_LOGO = "ui/startMenu/menu_background.png";
+    public static final String MENU_LOGO = "ui/startMenu/logo.png";
+
+    public static final String PAUSE_BUTTONS = "ui/pauseMenu/button_atlas.png";
+    public static final String PAUSE_BACKGROUND = "ui/pauseMenu/pause_background.png";
+    public static final String SOUND_BUTTONS = "ui/pauseMenu/sound_button_atlas.png";
+    public static final String VOLUME_SLIDER_BUTTONS = "ui/pauseMenu/slider_button_atlas.png";
 
     public static BufferedImage getStripeAtlas(String atlasName){
         BufferedImage img=null;

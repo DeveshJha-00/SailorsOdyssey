@@ -19,6 +19,9 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
             case PLAYING :
                 gamePanel.getGame().getPlaying().mouseClicked(e);
                 break;
+            case MENU:
+                gamePanel.getGame().getMenu().mouseClicked(e);
+                break;
             default:
                 System.out.println("Invalid game state");
                 break;
@@ -55,7 +58,7 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
     public void mouseDragged(MouseEvent e) {
         switch (GameState.currentState) {
             case PLAYING:
-                gamePanel.getGame().getPlaying().mouseMoved(e);
+                gamePanel.getGame().getPlaying().mouseDragged(e);
             default:
                 break;
         }
